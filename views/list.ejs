@@ -1,0 +1,26 @@
+<%- include('header'); -%>
+    <div id="heading" class="box">
+        <h1>
+            <%=day%>
+        </h1>
+    </div>
+    <div class="box">
+            <% newItems.forEach((data)=>{%>
+                <form action="/delete" method="post">
+                    <div class="item">
+                        <input type="checkbox" name="checkbox" value="<%=data._id%>" onChange="this.form.submit()">
+                        <p>
+                            <%=data.name%>
+                        </p>
+                        <input type="hidden" name="deletePath" value="<%=day%>">
+                    </div>
+                </form>
+
+                <% })%>
+
+        <form class="item" action="/" method="post">
+            <input type="text" name="task" placeholder="New Task" autocomplete="off">
+            <button type="submit" name="button" value="<%=day%>">+</button>
+        </form>
+    </div>
+<%- include('footer'); -%>
