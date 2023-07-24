@@ -10,7 +10,7 @@ var workList = [];
 app.set('view engine', 'ejs')
 
 async function start() {
-    mongoose.connect("mongodb://127.0.0.1:27017/todolistDb", { useNewUrlParser: true })
+    mongoose.connect("mongodb+srv://dhyanraibm:y1xXjDo8V6rlB2r7@cluster0.8a11ypf.mongodb.net/todolist", { useNewUrlParser: true })
         .then(() => {
             console.log('connected to DB');
         }).catch(() => {
