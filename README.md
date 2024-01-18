@@ -17,4 +17,6 @@ SimpleToDo is a basic ToDo List application developed for learning purposes. It 
 - **MongoDB**
 - **Vanilla CSS**
 
+**Note:** The site may take some time to load, so please wait up to 1 minute.
+
 **Note:** SimpleToDo is developed solely for learning purposes .Live demo of SimpleToDo [here](https://todolist-zyy1.onrender.com/)
